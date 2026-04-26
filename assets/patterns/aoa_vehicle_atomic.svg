@@ -2,23 +2,40 @@
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-      <stop offset="0%" style="stop-color:#0066CC;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#003366;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#004C99;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#001A33;stop-opacity:1" />
     </radialGradient>
-    <pattern id="grid" width="2" height="2" patternUnits="userSpaceOnUse">
-      <rect width="2" height="2" fill="none" stroke="white" stroke-width="0.1" opacity="0.1"/>
+    
+    <!-- DTM Security Matrix Pattern (Atomic Noise) -->
+    <pattern id="dtm_matrix" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="1" height="1" fill="white" opacity="0.3"/>
+      <rect x="2" y="2" width="0.5" height="0.5" fill="white" opacity="0.15"/>
+      <circle cx="1" cy="3" r="0.2" fill="white" opacity="0.4"/>
     </pattern>
   </defs>
-  <rect width="100" height="100" fill="url(#grid)" />
-  <circle cx="50" cy="50" r="45" fill="url(#grad1)" stroke="#001a33" stroke-width="1.5" />
-  <circle cx="50" cy="50" r="10" fill="none" stroke="white" stroke-width="0.5" opacity="0.8" />
-  <circle cx="50" cy="50" r="16.18" fill="none" stroke="white" stroke-width="0.8" opacity="0.6" />
-  <circle cx="50" cy="50" r="26.18" fill="none" stroke="white" stroke-width="1.2" opacity="0.4" />
-  <circle cx="50" cy="50" r="42.36" fill="none" stroke="white" stroke-width="1.5" opacity="0.2" />
   
-  <!-- Dynamic ID Placeholder -->
+  <!-- Main Background Container -->
+  <rect width="100" height="100" fill="#F0F0F0" />
+  
+  <!-- Outer Technical Ring -->
+  <circle cx="50" cy="50" r="48" fill="none" stroke="#003366" stroke-width="0.5" stroke-dasharray="1,1" />
+
+  <!-- Main AOA Medallion -->
+  <circle cx="50" cy="50" r="45" fill="url(#grad1)" stroke="#000" stroke-width="1" />
+  
+  <!-- Integrity Layer (Security Pattern now clearly visible) -->
+  <circle cx="50" cy="50" r="45" fill="url(#dtm_matrix)" />
+  
+  <!-- Atomic Concentric Rings (Invariance Control) -->
+  <circle cx="50" cy="50" r="10" fill="none" stroke="white" stroke-width="0.6" opacity="0.9" />
+  <circle cx="50" cy="50" r="18" fill="none" stroke="white" stroke-width="1.2" opacity="0.7" />
+  <circle cx="50" cy="50" r="28" fill="none" stroke="white" stroke-width="1.8" opacity="0.5" />
+  <circle cx="50" cy="50" r="40" fill="none" stroke="white" stroke-width="2.2" opacity="0.3" />
+  
+  <!-- Central Sovereign ID -->
+  <rect x="30" y="46" width="40" height="8" rx="1" fill="#001A33" opacity="0.8" />
   <text x="50" y="52" font-family="monospace" font-size="6" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="1">{{AOA_ID}}</text>
   
-  <text x="50" y="15" font-family="sans-serif" font-size="3" fill="white" text-anchor="middle" opacity="0.7" letter-spacing="2">AOA CORE PROTOCOL</text>
-  <text x="50" y="90" font-family="sans-serif" font-size="4" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="1">ATOMIC OPTICAL SIGNATURE</text>
+  <!-- Minimal AOA Branding -->
+  <text x="50" y="88" font-family="sans-serif" font-size="4" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="2">AOA 2.1 ATOMIC SIGNATURE</text>
 </svg>
