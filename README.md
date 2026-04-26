@@ -1,7 +1,7 @@
 # 🔬 AOA Core: Atomic Optical Signature Protocol
 > **Registry:** SYMBEON-AOA-001  
 > **Status:** PROPRIETARY / CORE IP  
-> **Endpoint:** https://github.com/symbeon-labs/aoa-core
+> **Standard:** GuardTag Specification v2.1
 
 ## 📜 Manifesto de Soberania Óptica
 
