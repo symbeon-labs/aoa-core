@@ -9,31 +9,16 @@
       <rect width="2" height="2" fill="none" stroke="white" stroke-width="0.1" opacity="0.1"/>
     </pattern>
   </defs>
-  
-  <!-- Background Integrity Layer (DTM Placeholder) -->
   <rect width="100" height="100" fill="url(#grid)" />
-  
-  <!-- Main Medallion -->
   <circle cx="50" cy="50" r="45" fill="url(#grad1)" stroke="#001a33" stroke-width="1.5" />
-  
-  <!-- Atomic Concentric Rings (Phi Sequence) -->
   <circle cx="50" cy="50" r="10" fill="none" stroke="white" stroke-width="0.5" opacity="0.8" />
   <circle cx="50" cy="50" r="16.18" fill="none" stroke="white" stroke-width="0.8" opacity="0.6" />
   <circle cx="50" cy="50" r="26.18" fill="none" stroke="white" stroke-width="1.2" opacity="0.4" />
   <circle cx="50" cy="50" r="42.36" fill="none" stroke="white" stroke-width="1.5" opacity="0.2" />
   
-  <!-- Central Identifier -->
-  <text x="50" y="52" font-family="monospace" font-size="6" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="1">GD-7A-42</text>
+  <!-- Dynamic ID Placeholder -->
+  <text x="50" y="52" font-family="monospace" font-size="6" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="1">{{AOA_ID}}</text>
   
-  <!-- Brand Header -->
   <text x="50" y="15" font-family="sans-serif" font-size="3" fill="white" text-anchor="middle" opacity="0.7" letter-spacing="2">AOA CORE PROTOCOL</text>
-  
-  <!-- Brand Footer -->
   <text x="50" y="90" font-family="sans-serif" font-size="4" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="1">ATOMIC OPTICAL SIGNATURE</text>
-  
-  <!-- Micro-Geometric Security Dots -->
-  <circle cx="20" cy="20" r="0.5" fill="white" opacity="0.5" />
-  <circle cx="80" cy="20" r="0.5" fill="white" opacity="0.5" />
-  <circle cx="20" cy="80" r="0.5" fill="white" opacity="0.5" />
-  <circle cx="80" cy="80" r="0.5" fill="white" opacity="0.5" />
 </svg>
